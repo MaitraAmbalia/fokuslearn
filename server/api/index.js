@@ -120,7 +120,7 @@ mongoose.connect(process.env.MONGO_URI)
   });
 
 // Only listen if not running in Vercel (production serverless)
-if (process.env.NODE_ENV !== 'production') {
+if (!process.env.VERCEL) {
   app.listen(PORT, () => {
     console.log(`🚀 Server running on port: ${PORT}`);
   });
