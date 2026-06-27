@@ -22,7 +22,7 @@ const Navbar = ({ user }) => {
           <div className="bg-blue-600 p-2 rounded-lg group-hover:bg-blue-700 transition-colors">
             <Play className="w-5 h-5 text-white fill-current" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-slate-800 dark:text-white">YT Focus</span>
+          <span className="text-xl font-bold tracking-tight text-slate-800 dark:text-white">Fokuslearn</span>
         </Link>
 
         {/* Right Side Actions */}

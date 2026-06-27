@@ -4,8 +4,8 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "node --watch index.js"
+    "start": "node api/index.js",
+    "dev": "node --watch api/index.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -26,5 +26,8 @@
   },
   "engines": {
     "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^11.2.0"
   }
 }

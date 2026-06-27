@@ -51,7 +51,7 @@ const Home = () => {
             <div className="bg-blue-600 p-2 rounded-xl group-hover:bg-blue-700 transition-colors shadow-lg shadow-blue-500/20">
               <Play className="w-5 h-5 text-white fill-current" />
             </div>
-            <span className="text-xl font-bold tracking-tight text-slate-800 dark:text-white">YT Focus</span>
+            <span className="text-xl font-bold tracking-tight text-slate-800 dark:text-white">Fokuslearn</span>
           </div>
 
           {/* Navigation Links */}
@@ -234,7 +234,7 @@ const Home = () => {
             <div className="bg-blue-600 p-1.5 rounded-lg">
               <Play className="w-4 h-4 text-white fill-current" />
             </div>
-            <span className="font-bold text-slate-700 dark:text-slate-200 text-lg">YT Focus</span>
+            <span className="font-bold text-slate-700 dark:text-slate-200 text-lg">Fokuslearn</span>
           </div>
 
           <div className="flex gap-8 text-sm text-slate-500 dark:text-slate-400">
@@ -244,7 +244,7 @@ const Home = () => {
             <a href="#" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">GitHub</a>
           </div>
 
-          <p className="text-sm text-slate-400 dark:text-slate-500">© 2025 YT Focus. All rights reserved.</p>
+          <p className="text-sm text-slate-400 dark:text-slate-500">© 2026 Fokuslearn. All rights reserved.</p>
         </div>
       </footer>
     </div>

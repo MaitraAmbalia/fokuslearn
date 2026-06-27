@@ -65,7 +65,7 @@ const Login = () => {
             <Play className="w-8 h-8 text-white fill-current" />
           </div>
           <h2 className="text-2xl font-bold text-white">
-            {isLogin ? 'Welcome Back' : 'Join YT Focus'}
+            {isLogin ? 'Welcome Back' : 'Join Fokuslearn'}
           </h2>
           <p className="text-blue-100 mt-2">
             {isLogin ? 'Continue your learning streak.' : 'Start your journey today.'}

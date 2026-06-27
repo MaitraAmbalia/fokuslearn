@@ -1,10 +1,6 @@
 import axios from 'axios';
 
-// 1. Determine the Base URL dynamically
-// Vercel will provide VITE_API_URL; Localhost will fall back to port 5000
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
-
-// 2. Create the Axios instance
+// Create the Axios instance
 const isProduction = import.meta.env.MODE === 'production';
 
 const api = axios.create({

@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
         
         <div className="text-center md:text-left">
-          <h4 className="font-bold text-slate-900">YT Focus</h4>
+          <h4 className="font-bold text-slate-900">Fokuslearn</h4>
           <p className="text-slate-500 text-sm mt-1">
             Built for the TeckSprint Hackathon 2025
           </p>

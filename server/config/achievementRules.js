@@ -8,4 +8,4 @@ const BADGES = [
 
 const LEVEL_THRESHOLDS = [0, 100, 300, 600, 1000, 2000, 5000, 10000]; // XP needed for Level 1, 2, 3...
 
-module.exports = { BADGES, LEVEL_THRESHOLDS };
+export { BADGES, LEVEL_THRESHOLDS };

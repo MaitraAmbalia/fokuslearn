@@ -88,7 +88,14 @@ const RoadmapView = ({ videos, currentVideoId, onVideoSelect }) => {
 
                 {/* Video Info */}
                 <div className="flex-1 min-w-0">
-                  <p className={`font-medium text-sm truncate ${isActive ? 'text-blue-700 dark:text-blue-300' : isLocked ? 'text-slate-400 dark:text-slate-600' : 'text-slate-800 dark:text-slate-200'
+                  <p className={`font-medium text-sm truncate ${
+                    isCompleted 
+                      ? 'line-through text-slate-400 dark:text-slate-500 font-normal' 
+                      : isActive 
+                        ? 'text-blue-700 dark:text-blue-300' 
+                        : isLocked 
+                          ? 'text-slate-400 dark:text-slate-600' 
+                          : 'text-slate-800 dark:text-slate-200'
                     }`}>
                     {actualIndex + 1}. {video.title}
                   </p>

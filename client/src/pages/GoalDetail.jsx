@@ -236,7 +236,7 @@ const GoalDetail = () => {
           <div className="lg:col-span-2 space-y-6">
             <div className="bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video">
               {currentVideo?.youtubeId ? (
-                <VideoPlayer url={`https://www.youtube.com/watch?v=${currentVideo.youtubeId}`} onComplete={handleVideoComplete} />
+                <VideoPlayer url={`https://www.youtube.com/watch?v=${currentVideo.youtubeId}`} />
               ) : <div className="text-white p-10">Video Unavailable</div>}
             </div>
 

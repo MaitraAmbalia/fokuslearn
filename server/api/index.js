@@ -29,9 +29,12 @@ app.use(passport.initialize());
 // ✅ CORS Configuration - Only allow specific origins
 const allowedOrigins = [
   "http://localhost:5173",
-  "https://ytfocus.vercel.app",
-  "https://yt-focus-eosin.vercel.app",
-  "https://yt-focus-psi.vercel.app"
+  "http://localhost:5174",
+  "http://localhost:5175",
+  "http://localhost:5000",
+  "https://fokuslearn.vercel.app",
+  "https://fokuslearn-eosin.vercel.app",
+  "https://fokuslearn-psi.vercel.app"
 ];
 
 app.use(cors({
@@ -107,18 +110,20 @@ app.use((err, req, res, next) => {
   });
 });
 
+// Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log('✅ App connected to database');
-    // Only listen if not running in Vercel (production serverless)
-    if (process.env.NODE_ENV !== 'production') {
-      app.listen(PORT, () => {
-        console.log(`🚀 Server running on port: ${PORT}`);
-      });
-    }
   })
   .catch((error) => {
     console.error('❌ Database connection failed:', error);
   });
+
+// Only listen if not running in Vercel (production serverless)
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server running on port: ${PORT}`);
+  });
+}
 
 export default app;
