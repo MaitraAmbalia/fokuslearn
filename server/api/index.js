@@ -99,7 +99,7 @@ app.use('/api/ai', aiRoutes);
 app.use('/api/admin', adminRoutes);
 
 app.get('/', (req, res) => {
-  res.send('API is running successfully!');
+  res.send('API is running successfully! [diagnostic-1]');
 });
 
 // ✅ SECURITY: Global error handler — prevents stack traces leaking to clients
