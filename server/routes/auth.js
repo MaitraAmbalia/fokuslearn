@@ -26,6 +26,12 @@ const setTokenCookie = (res, token) => {
   });
 };
 
+// @route   GET /api/auth/test-google
+// @desc    Test if auth route is active
+router.get('/test-google', (req, res) => {
+  res.send('Google auth route is here!');
+});
+
 // @route   GET /api/auth/google
 // @desc    Auth with Google
 router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
